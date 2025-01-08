@@ -17,6 +17,12 @@ public class HomePage extends BasePage {
 	@FindBy(css = "#password")
 	WebElement txtUserPassword;
 
+	@FindBy(css = "#terms")
+	WebElement chkbTerms;
+
+	@FindBy(id = "signInBtn")
+	WebElement btnSubmit;
+
 	public void userName(String uname) {
 
 		txtUserName.sendKeys(uname);
@@ -26,6 +32,15 @@ public class HomePage extends BasePage {
 	public void userPassword(String password) {
 
 		txtUserPassword.sendKeys(password);
+	}
+
+	public void clickCheckBoxTerms() {
+		chkbTerms.click();
+
+	}
+
+	public void clickSubmitButton() {
+		btnSubmit.click();
 	}
 
 }

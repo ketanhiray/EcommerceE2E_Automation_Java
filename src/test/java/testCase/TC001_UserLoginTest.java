@@ -15,6 +15,8 @@ public class TC001_UserLoginTest extends BaseClass {
 		
 		homePage.userName("rahulshettyacademy");
 		homePage.userPassword("learning");
+		homePage.clickCheckBoxTerms();
+		homePage.clickSubmitButton();
 	
 
 
